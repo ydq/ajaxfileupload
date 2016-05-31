@@ -1,6 +1,9 @@
 # ajaxfileupload
 ajaxfileupload
 
+
+	<input type="file" id="file_input_id" name="myfiles"/>
+
 	$.ajaxFileUpload({
 		url: '/uploadurl',
 		fileElementId:'file_input_id',
