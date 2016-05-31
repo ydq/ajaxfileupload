@@ -1,7 +1,7 @@
 # ajaxfileupload
 ajaxfileupload
 
-	`$.ajaxFileUpload({
+	$.ajaxFileUpload({
 		url: '/uploadurl',
 		fileElementId:'file_input_id',
 		data:{key:'value'},//data
@@ -12,4 +12,4 @@ ajaxfileupload
 		error: function (data, status, e) {
 			//error
 		}
-	}); `
+	})
