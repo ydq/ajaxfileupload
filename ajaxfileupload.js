@@ -1,11 +1,11 @@
 $.extend({
     createUploadIframe: function(id){
         var frameId = 'jUploadFrame' + id;
-        return $('<iframe></iframe>').attr({id:frameId,name:frameId}).css({top:'-9999px',left:'-9999px',position:'absolute'}).appendTo('body')[0];
+        return $('<iframe>').attr({id:frameId,name:frameId}).css({top:'-9999px',left:'-9999px',position:'absolute'}).appendTo('body')[0];
     },
     createUploadForm: function(id, fileElementId){
         var formId = 'jUploadForm' + id,fileId = 'jUploadFile' + id,oldElement = $('#' + fileElementId),newElement = $(oldElement).clone();
-        return $('<form></form>').attr({id:formId,name:formId}).append($(oldElement).attr('id', fileId).before(newElement)).css({position:'absolute',top:'-1200px',left:'-1200px'}).appendTo('body')[0];
+        return $('<form>').attr({id:formId,name:formId}).append($(oldElement).attr('id', fileId).before(newElement)).css({position:'absolute',top:'-1200px',left:'-1200px'}).appendTo('body')[0];
     },
     addOtherRequestsToForm: function(form,data){
         var originalElement = $('<input type="hidden"/>');
