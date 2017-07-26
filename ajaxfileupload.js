@@ -79,7 +79,7 @@ $.extend({
                 var am = reg.exec(data);
                 data =am? am[1] : '';
         	}
-            data=$.parseJSON(data);
+            data=JSON.parse(data);
         }
         if ( type == "html" )
             $("<div>").html(data).evalScripts();
